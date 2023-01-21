@@ -1,5 +1,5 @@
-import java.util.Scanner;
-class CapitalString
+import java.util.*;
+class CapitalStrings
 {
 	public static void main(String args[])
 	{
