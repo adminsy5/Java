@@ -164,6 +164,24 @@ class JavaStrings {
                 + "\n\tSo which words to start Your name ?" + "\n\tohh it's " + Name.substring(0, 3));
     }
 
+    void replaceOrreplaceAll() {
+        String rep = str.replace(" ", "+");
+        String repAll = str.replaceAll(admin, adminLower);
+        System.out.println("\n--> Replace the string where space ,it's change with + : " + rep);
+        System.out.println("\treplace all the : " + repAll + "and also we can try this " + repAll.replaceAll("m", " "));
+    }
+
+    void LatsIndexOfValue() {
+        System.out.println("\n--> The last intdex of m in above string is : " + adminLower.lastIndexOf('m', 19)); // before
+                                                                                                                  // the
+                                                                                                                  // ending
+                                                                                                                  // number
+                                                                                                                  // gives
+                                                                                                                  // the
+                                                                                                                  // charcter
+                                                                                                                  // indexs
+    }
+
     public static void main(String args[]) {
         JavaStrings js = new JavaStrings();
         js.stringExample1();
@@ -189,5 +207,7 @@ class JavaStrings {
         js.SubStringMethod();
         js.ToCharArrayMethod();
         js.StartwithCheck();
+        js.replaceOrreplaceAll();
+        js.LatsIndexOfValue();
     }
 }
